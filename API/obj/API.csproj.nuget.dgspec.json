@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ipodserver2017/Projects/Kevin_C#/skinet/API/API.csproj": {}
+    "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj": {}
   },
   "projects": {
-    "/Users/ipodserver2017/Projects/Kevin_C#/skinet/API/API.csproj": {
+    "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ipodserver2017/Projects/Kevin_C#/skinet/API/API.csproj",
+        "projectUniqueName": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/ipodserver2017/Projects/Kevin_C#/skinet/API/API.csproj",
-        "packagesPath": "/Users/ipodserver2017/.nuget/packages/",
-        "outputPath": "/Users/ipodserver2017/Projects/Kevin_C#/skinet/API/obj/",
+        "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj",
+        "packagesPath": "/Users/shanzhichen/.nuget/packages/",
+        "outputPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/ipodserver2017/.nuget/NuGet/NuGet.Config"
+          "/Users/shanzhichen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -64,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
         }
       }
     }
