@@ -34,6 +34,7 @@ namespace API
 
             services.AddDbContext<StoreContext>(options =>
             {
+                // options.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
                 // options.UseSqlite(ConfigurationÍ.GetConnectionString("DefaultConnection"));
 
