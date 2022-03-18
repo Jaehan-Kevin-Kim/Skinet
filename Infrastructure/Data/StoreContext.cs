@@ -15,5 +15,9 @@ namespace Infrastructure.Data
         // 아래와 같이 DbSet type으로 변수 지정 하기
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<ProductBrand> ProductBrands { get; set; }
+
+        public DbSet<ProductType> ProductTypes { get; set; }
+
     }
 }

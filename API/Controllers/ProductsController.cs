@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
 using Core.Entities;
+using Core.Interfaces;
 
 namespace API.Controllers
 {
@@ -11,23 +12,28 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {
-        private readonly StoreContext _context;
-        public ProductsController(StoreContext context)
+        private readonly IProductRepository _repo;
+    
+
+        public ProductsController(IProductRepository repo)
         {
-            _context = context;
+            this._repo = repo;
         }
+        //위와 같이 Repository Interface를 Inject 함.
+
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            var products = await _context.Products.ToListAsync(); // 이 명령어는  ToList()라는 함수를 통해서 db에서 query가 실행 되고, 그 결과값이 products에 저장되는 형태임, 이런 코드는 삽입 후 다시 db update등을 할 필요없이 그냥 server만 재 실행 시키면 됨. (dotnet watch run 해두면 변경사항 있을때마다 자동으로 업데이트 됨)
+            var products = await _repo.GetProductsAsync();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = await _repo.GetProductByIdAsync(id);
+            // var product = await _repo.GetProductsAsync();
             if (product == null)
             {
                 return BadRequest("The product is not exist.");

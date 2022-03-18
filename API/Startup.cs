@@ -1,4 +1,5 @@
 
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -21,9 +22,13 @@ namespace API
 
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        // 여기 서비스에서의 선언 순서는 크게 중요하지 않음. 하지만 아래 Configure의 경우는 middleware이고 이거 같은경우는 위에서 부터 아래로 실행되므로 순서가 중요함.
         public void ConfigureServices(IServiceCollection services)
         {
 
+            // 아래 services.Add뒤에 나오는 내용들은 보통 살아있는 기간과 관련이 있을 수 있음.
+            services.AddScoped<IProductRepository, ProductRepository>();
+            
             services.AddControllers();
 
             services.AddDbContext<StoreContext>(options =>
@@ -41,6 +46,7 @@ namespace API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // 여기 Configure의 경우는 middleware이고 이거 같은경우는 위에서 부터 아래로 실행되므로 순서가 중요함.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

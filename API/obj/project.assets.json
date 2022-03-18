@@ -2546,32 +2546,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/shanzhichen/.nuget/packages/": {}
+    "C:\\Users\\jhkev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj",
+      "projectUniqueName": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj",
-      "packagesPath": "/Users/shanzhichen/.nuget/packages/",
-      "outputPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/obj/",
+      "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\jhkev\\.nuget\\packages\\",
+      "outputPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/shanzhichen/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jhkev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/Infrastructure.csproj"
+            "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -2619,7 +2621,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
