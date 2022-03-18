@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using Core.Entities;
+using System.Reflection;
+
 namespace Infrastructure.Data
 {
     public class StoreContext : DbContext
@@ -18,6 +20,13 @@ namespace Infrastructure.Data
         public DbSet<ProductBrand> ProductBrands { get; set; }
 
         public DbSet<ProductType> ProductTypes { get; set; }
+
+        // 아래 OnModelCreating Method는 migration을 creating하게 해주는 함수 임
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
 
     }
 }
