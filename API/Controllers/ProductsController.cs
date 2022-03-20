@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specifications;
 
 namespace API.Controllers
 {
@@ -14,11 +15,11 @@ namespace API.Controllers
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
         private readonly IGenericRepository<ProductType> _productTypeRepo;
 
-        
+
         public ProductsController(
-            IGenericRepository<Product> productsRepo, 
-            IGenericRepository<ProductBrand> productBrandRepo, 
-            IGenericRepository<ProductType> productTypeRepo)        
+            IGenericRepository<Product> productsRepo,
+            IGenericRepository<ProductBrand> productBrandRepo,
+            IGenericRepository<ProductType> productTypeRepo)
         {
             this._productsRepo = productsRepo;
             this._productBrandRepo = productBrandRepo;
@@ -46,7 +47,11 @@ namespace API.Controllers
 
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            var products = await _productsRepo.ListAllAsync();
+            // var products = await _productsRepo.ListAllAsync();
+            // return Ok(products);
+            var spec = new ProductsWithTypesAndBrandsSpecification();
+
+            var products = await _productsRepo.ListAsync(spec);
             return Ok(products);
         }
 
@@ -64,7 +69,17 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var product = await _productsRepo.GetByIdAsync(id);
+            // var product = await _productsRepo.GetByIdAsync(id);
+            // if (product == null)
+            // {
+            //     return BadRequest("The product is not exist.");
+            // }
+            // return Ok(product);
+
+            var spec = new ProductsWithTypesAndBrandsSpecification(id);
+
+            var product = await _productsRepo.GetEntityWithSpec(spec);
+
             if (product == null)
             {
                 return BadRequest("The product is not exist.");

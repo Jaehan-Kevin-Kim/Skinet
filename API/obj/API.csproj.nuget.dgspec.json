@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj": {}
+    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\api\\API.csproj": {}
   },
   "projects": {
-    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj": {
+    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj",
+        "projectUniqueName": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj",
+        "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\api\\API.csproj",
         "packagesPath": "C:\\Users\\jhkev\\.nuget\\packages\\",
-        "outputPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\obj\\",
+        "outputPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jhkev\\AppData\\Roaming\\NuGet\\NuGet.Config",

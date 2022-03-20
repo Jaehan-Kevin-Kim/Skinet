@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9bVn2a6f04c0DBgQcXHWckTPADctSGihK0w1FiLpJFh3f5tOyo1dUBxqRckhrws0JsQHXOzsRQ9/6mBjakVfbg==",
+  "dgSpecHash": "Vyc2klvr08WOHXTpk5q4Ayl7zIiPna7ecmwR/3nVwChnVmUqOpnmmHHScoGHfPtdl5l2CuLKvxOoNvDe+DBCFw==",
   "success": true,
-  "projectFilePath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj",
+  "projectFilePath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jhkev\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jhkev\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
