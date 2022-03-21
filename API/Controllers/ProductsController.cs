@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
+using API.Dtos;
+using System.Linq;
 
 namespace API.Controllers
 {
@@ -44,15 +46,24 @@ namespace API.Controllers
         //     return Ok(products);
         // }
         [HttpGet]
-
-        public async Task<ActionResult<List<Product>>> GetProducts()
+        public async Task<ActionResult<List<ProductToReturnDto>>> GetProducts()
         {
             // var products = await _productsRepo.ListAllAsync();
             // return Ok(products);
             var spec = new ProductsWithTypesAndBrandsSpecification();
 
-            var products = await _productsRepo.ListAsync(spec);
-            return Ok(products);
+            var products = await _productsRepo.ListAsync(spec); // 이 부분이 database와 connect 해서 data를 가져오는 부분z
+
+            return products.Select(product => new ProductToReturnDto
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                PictureUrl = product.PictureUrl,
+                Price = product.Price,
+                ProductBrand = product.ProductBrand.Name,
+                ProductType = product.ProductType.Name
+            }).ToList(); // 이 부분은 database와 통신을 이미 끝내고 값이 저장되있는 products memory에 접근 해서 해당 값을 ProductToReturnDto로 변환하고 또 list로 만들어서 memory에 저장하는 과정
         }
 
         // [HttpGet("{id}")]
@@ -67,24 +78,47 @@ namespace API.Controllers
         // }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id)
+        public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
         {
-            // var product = await _productsRepo.GetByIdAsync(id);
+            /*
+            1. var product = await _productsRepo.GetByIdAsync(id);
             // if (product == null)
             // {
             //     return BadRequest("The product is not exist.");
             // }
             // return Ok(product);
+            */
 
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
 
             var product = await _productsRepo.GetEntityWithSpec(spec);
 
-            if (product == null)
+            return new ProductToReturnDto
             {
-                return BadRequest("The product is not exist.");
-            }
-            return Ok(product);
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                PictureUrl = product.PictureUrl,
+                Price = product.Price,
+                ProductBrand = product.ProductBrand.Name,
+                ProductType = product.ProductType.Name
+            };
+            // var productToReturnDto = new ProductToReturnDto
+            // {
+            //     Id = product.Id,
+            //     Name = product.Name,
+            //     Description = product.Description,
+            //     PictureUrl = product.PictureUrl,
+            //     Price = product.Price,
+            //     ProductBrand = product.ProductBrand.Name,
+            //     ProductType = product.ProductType.Name
+            // };
+
+            // if (product == null)
+            // {
+            //     return BadRequest("The product is not exist.");
+            // }
+            // return Ok(productToReturnDto);
         }
 
         // [HttpGet("brands")]
