@@ -66,6 +66,8 @@ namespace API
 
             app.UseRouting();
 
+            app.UseStaticFiles(); // 위치는 app.UseRouting(); 아래에 위치. staticFile을 불러올 수 있게 해주는 설정 값
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

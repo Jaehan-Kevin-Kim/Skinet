@@ -9,7 +9,7 @@ namespace API.Helpers
     public class ProductUrlResolver : IValueResolver<Product, ProductToReturnDto, string> // IValueResolver<값을 가져 올 entity, 값을 받을 entity, 넣어줄 type>
     {
         private readonly IConfiguration _config;
-        public ProductUrlResolver(IConfiguration config) // IConfiguration 을 가져올때 Automapper 도 있으 Microsoft 가져올 수 있게 주의하기!!!
+        public ProductUrlResolver(IConfiguration config) // IConfiguration 을 가져올때 Automapper 도 있으 Microsoft에서 가져올 수 있게 주의하기!!!
         {
             _config = config;
         }

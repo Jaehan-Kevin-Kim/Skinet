@@ -211,3 +211,4 @@ D:/SelfStudy_Coding/Web/Self Practice/C#/Skinet/API/obj/Debug/net6.0/API.genrunt
 D:/SelfStudy_Coding/Web/Self Practice/C#/Skinet/API/obj/Debug/net6.0/ref/API.dll
 /Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/bin/Debug/net6.0/AutoMapper.dll
 /Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/bin/Debug/net6.0/API.staticwebassets.runtime.json
