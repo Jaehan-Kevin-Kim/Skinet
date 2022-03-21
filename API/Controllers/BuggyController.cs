@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Errors;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -24,10 +25,16 @@ namespace API.Controllers
 
             if (thing == null)
             {
-                return NotFound();
+                return NotFound(new ApiResponse(404));
             }
 
             return Ok();
+        }
+
+        [HttpGet("badrequest")]
+        public ActionResult GetBadRequest()
+        {
+            return BadRequest(new ApiResponse(400));
         }
 
         [HttpGet("servererror")]
@@ -40,11 +47,7 @@ namespace API.Controllers
             return Ok();
         }
 
-        [HttpGet("badrequest")]
-        public ActionResult GetBadRequest()
-        {
-            return BadRequest();
-        }
+
 
         [HttpGet("badrequest/{id}")]
         public ActionResult GetNotFoundRequest(int id)
