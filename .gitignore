@@ -3,6 +3,5 @@ bin
 appsetings.json
 *.db
 
-API/bin/
-API/obj/
+
 
