@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D5zmzJ+7ROx7FPB9JHVnHvovZUyiOwZdDpRQF/ety1k=",
+  "Hash": "PDnXUhNMjAKKwzqFAchs98osRyI1FI18Qv/B34SdW8E=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "API\\wwwroot",
+      "Name": "API/wwwroot",
       "Source": "API",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\.DS_Store",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/.DS_Store",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\.DS_Store"
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\.DS_Store",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/.DS_Store",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/.DS_Store",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\.DS_Store"
+      "OriginalItemSpec": "wwwroot/images/.DS_Store"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\boot-ang1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/boot-ang1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-ang1.png",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang1.png"
+      "OriginalItemSpec": "wwwroot/images/products/boot-ang1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\boot-ang2.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/boot-ang2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-ang2.png",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang2.png"
+      "OriginalItemSpec": "wwwroot/images/products/boot-ang2.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\boot-core1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/boot-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-core1.png",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-core1.png"
+      "OriginalItemSpec": "wwwroot/images/products/boot-core1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\boot-core2.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/boot-core2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-core2.png",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-core2.png"
+      "OriginalItemSpec": "wwwroot/images/products/boot-core2.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\boot-redis1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/boot-redis1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-redis1.png",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-redis1.png"
+      "OriginalItemSpec": "wwwroot/images/products/boot-redis1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\glove-code1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/glove-code1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-code1.png",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-code1.png"
+      "OriginalItemSpec": "wwwroot/images/products/glove-code1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\glove-code2.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/glove-code2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-code2.png",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-code2.png"
+      "OriginalItemSpec": "wwwroot/images/products/glove-code2.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\glove-react1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/glove-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-react1.png",
       "AssetKind": "All",
@@ -184,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-react1.png"
+      "OriginalItemSpec": "wwwroot/images/products/glove-react1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\glove-react2.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/glove-react2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-react2.png",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-react2.png"
+      "OriginalItemSpec": "wwwroot/images/products/glove-react2.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\hat-core1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/hat-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/hat-core1.png",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\hat-core1.png"
+      "OriginalItemSpec": "wwwroot/images/products/hat-core1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\hat-react1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/hat-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/hat-react1.png",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\hat-react1.png"
+      "OriginalItemSpec": "wwwroot/images/products/hat-react1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\hat-react2.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/hat-react2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/hat-react2.png",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\hat-react2.png"
+      "OriginalItemSpec": "wwwroot/images/products/hat-react2.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\sb-ang1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/sb-ang1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-ang1.png",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang1.png"
+      "OriginalItemSpec": "wwwroot/images/products/sb-ang1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\sb-ang2.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/sb-ang2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-ang2.png",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang2.png"
+      "OriginalItemSpec": "wwwroot/images/products/sb-ang2.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\sb-core1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/sb-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-core1.png",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-core1.png"
+      "OriginalItemSpec": "wwwroot/images/products/sb-core1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\sb-core2.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/sb-core2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-core2.png",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-core2.png"
+      "OriginalItemSpec": "wwwroot/images/products/sb-core2.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\sb-react1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/sb-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-react1.png",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-react1.png"
+      "OriginalItemSpec": "wwwroot/images/products/sb-react1.png"
     },
     {
-      "Identity": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\images\\products\\sb-ts1.png",
+      "Identity": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/images/products/sb-ts1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\wwwroot\\",
+      "ContentRoot": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-ts1.png",
       "AssetKind": "All",
@@ -354,7 +354,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ts1.png"
+      "OriginalItemSpec": "wwwroot/images/products/sb-ts1.png"
     }
   ]
 }

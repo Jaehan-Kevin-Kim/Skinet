@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj": {}
+    "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj": {}
   },
   "projects": {
-    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj": {
+    "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj",
+        "projectUniqueName": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\jhkev\\.nuget\\packages\\",
-        "outputPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\API\\obj\\",
+        "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/API.csproj",
+        "packagesPath": "/Users/shanzhichen/.nuget/packages/",
+        "outputPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jhkev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/shanzhichen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\Infrastructure.csproj"
+              "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -60,7 +58,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.2.2, )"
             }
           },
           "imports": [
@@ -81,28 +79,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Core\\Core.csproj": {
+    "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Core\\Core.csproj",
+        "projectUniqueName": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\jhkev\\.nuget\\packages\\",
-        "outputPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Core\\obj\\",
+        "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Core/Core.csproj",
+        "packagesPath": "/Users/shanzhichen/.nuget/packages/",
+        "outputPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jhkev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/shanzhichen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -135,36 +131,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\Infrastructure.csproj": {
+    "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\jhkev\\.nuget\\packages\\",
-        "outputPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Infrastructure\\obj\\",
+        "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/shanzhichen/.nuget/packages/",
+        "outputPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jhkev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/shanzhichen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Core\\Core.csproj": {
-                "projectPath": "D:\\SelfStudy_Coding\\Web\\Self Practice\\C#\\Skinet\\Core\\Core.csproj"
+              "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Core/Core.csproj": {
+                "projectPath": "/Users/shanzhichen/Projects/Kevin_Angular/Skinet/Core/Core.csproj"
               }
             }
           }
@@ -203,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
         }
       }
     }
