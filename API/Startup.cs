@@ -1,5 +1,6 @@
 
 using API.Helpers;
+using API.Middleware;
 using AutoMapper;
 using Core.Interfaces;
 using Infrastructure.Data;
@@ -55,12 +56,17 @@ namespace API
         // 여기 Configure의 경우는 middleware이고 이거 같은경우는 위에서 부터 아래로 실행되므로 순서가 중요함.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            app.UseMiddleware<ExceptionMiddleware>();
+
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                // app.UseDeveloperExceptionPage(); // 이 부분이 원래 exception handling middleware를 동작시키는 부분
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
             }
+
+            app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
 

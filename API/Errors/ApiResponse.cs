@@ -4,12 +4,12 @@ namespace API.Errors
     {
         public ApiResponse(int statusCode, string message = null)
         {
-            Status = statusCode;
+            StatusCode = statusCode;
             Message = message ?? GetDefaultMessageForStatusCode(statusCode);
         }
 
 
-        public int Status { get; set; }
+        public int StatusCode { get; set; }
         public string Message { get; set; }
         private string GetDefaultMessageForStatusCode(int statusCode)
         {
