@@ -26,7 +26,7 @@ namespace API.Middleware
         {
             try
             {
-                await _next(context);
+                await _next(context); // If there's no exception (no error), then move to the next middleware from Start.cs
             }
             catch (Exception ex)
             {
