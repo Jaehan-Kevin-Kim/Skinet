@@ -80,12 +80,13 @@ namespace API
 
             app.UseMiddleware<ExceptionMiddleware>();
 
-            if (env.IsDevelopment())
-            {
-                // app.UseDeveloperExceptionPage(); // 이 부분이 원래 exception handling middleware를 동작시키는 부분
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
+
+            // if (env.IsDevelopment())
+            // {
+            //     // app.UseDeveloperExceptionPage(); // 이 부분이 원래 exception handling middleware를 동작시키는 부분
+            // }
 
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
