@@ -51,11 +51,11 @@ namespace API.Controllers
         //     return Ok(products);
         // }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort)
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort, int? brandId, int? typeId)
         {
             // var products = await _productsRepo.ListAllAsync();
             // return Ok(products);
-            var spec = new ProductsWithTypesAndBrandsSpecification(sort);
+            var spec = new ProductsWithTypesAndBrandsSpecification(sort, brandId, typeId);
 
             var products = await _productsRepo.ListAsync(spec); // 이 부분이 database와 connect 해서 data를 가져오는 부분z
 
