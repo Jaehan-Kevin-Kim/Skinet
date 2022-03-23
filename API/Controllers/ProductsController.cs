@@ -5,7 +5,6 @@ using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
 using API.Dtos;
-using System.Linq;
 using AutoMapper;
 using API.Errors;
 using Microsoft.AspNetCore.Http;
@@ -52,11 +51,11 @@ namespace API.Controllers
         //     return Ok(products);
         // }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts()
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort)
         {
             // var products = await _productsRepo.ListAllAsync();
             // return Ok(products);
-            var spec = new ProductsWithTypesAndBrandsSpecification();
+            var spec = new ProductsWithTypesAndBrandsSpecification(sort);
 
             var products = await _productsRepo.ListAsync(spec); // 이 부분이 database와 connect 해서 data를 가져오는 부분z
 
