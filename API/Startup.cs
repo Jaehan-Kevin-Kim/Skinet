@@ -42,7 +42,13 @@ namespace API
 
             services.AddSwaggerDocumentation();
 
-
+            services.AddCors(option =>
+            {
+                option.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"); ;
+                });
+            });
 
         }
 
@@ -50,6 +56,8 @@ namespace API
         // 여기 Configure의 경우는 middleware이고 이거 같은경우는 위에서 부터 아래로 실행되므로 순서가 중요함.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+
 
             app.UseMiddleware<ExceptionMiddleware>();
 
@@ -67,6 +75,8 @@ namespace API
             app.UseRouting();
 
             app.UseStaticFiles(); // 위치는 app.UseRouting(); 아래에 위치. staticFile을 불러올 수 있게 해주는 설정 값
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
