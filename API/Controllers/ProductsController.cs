@@ -8,6 +8,7 @@ using API.Dtos;
 using AutoMapper;
 using API.Errors;
 using Microsoft.AspNetCore.Http;
+using API.Helpers;
 
 namespace API.Controllers
 {
@@ -50,6 +51,38 @@ namespace API.Controllers
         //     var products = await _repo.GetProductsAsync();
         //     return Ok(products);
         // }
+
+        [HttpGet]
+        public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts([FromQuery] ProductSpecParams productParams)
+        {
+            // var products = await _productsRepo.ListAllAsync();
+            // return Ok(products);
+            var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
+
+            var countSpec = new ProductWithFiltersForCountSpecification(productParams);
+
+            var totalItems = await _productsRepo.CountAsync(countSpec);
+
+            var products = await _productsRepo.ListAsync(spec); // 이 부분이 database와 connect 해서 data를 가져오는 부분z
+
+            var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
+
+
+            return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex, productParams.PageSize, totalItems, data));
+
+            // return products.Select(product => new ProductToReturnDto
+            // {
+            //     Id = product.Id,
+            //     Name = product.Name,
+            //     Description = product.Description,
+            //     PictureUrl = product.PictureUrl,
+            //     Price = product.Price,
+            //     ProductBrand = product.ProductBrand.Name,
+            //     ProductType = product.ProductType.Name
+            // }).ToList(); // 이 부분은 database와 통신을 이미 끝내고 값이 저장되있는 products memory에 접근 해서 해당 값을 ProductToReturnDto로 변환하고 또 list로 만들어서 memory에 저장하는 과정
+        }
+
+        /*
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts([FromQuery] ProductSpecParams productParams)
         {
@@ -72,7 +105,7 @@ namespace API.Controllers
             //     ProductType = product.ProductType.Name
             // }).ToList(); // 이 부분은 database와 통신을 이미 끝내고 값이 저장되있는 products memory에 접근 해서 해당 값을 ProductToReturnDto로 변환하고 또 list로 만들어서 memory에 저장하는 과정
         }
-
+*/
         // [HttpGet("{id}")]
         // public async Task<ActionResult<Product>> GetProduct(int id)
         // {
