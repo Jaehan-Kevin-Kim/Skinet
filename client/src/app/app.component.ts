@@ -11,27 +11,11 @@ import { IPagination } from './shared/models/pagination';
 export class AppComponent implements OnInit {
 
   title = 'Skinet Title';
-  products: IProduct[];
 
-  constructor(private http: HttpClient) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-    this.http.get('https://localhost:5001/api/products?pageSize=50').subscribe({
-      next: (response: IPagination) => {
-        this.products = response.data;
-        console.log(response)
-      },
-      error: (error) => console.log(error),
-    }
-    );
-    // this.http.get('https://localhost:5001/api/products?pageSize=50').subscribe(
-    //   (response: any) =>
-    //     console.log(response)
-    //   , error => {
-    //     console.log(error);
-
-    //   }
-    // );
   }
 
 

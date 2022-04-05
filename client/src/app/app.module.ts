@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { ShopModule } from './shop/shop.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CoreModule } from './core/core.module';
     FontAwesomeModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    CoreModule
+    CoreModule,
+    ShopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
