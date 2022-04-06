@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IProduct } from '../../shared/models/product';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product-item',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductItemComponent implements OnInit {
 
+  faCartShopping = faCartShopping
+  @Input() product: IProduct;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log("product: ", this.product);
+
   }
 
 }
