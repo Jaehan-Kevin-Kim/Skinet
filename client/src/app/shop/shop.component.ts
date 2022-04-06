@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from '../shared/models/product';
 import { ShopService } from './shop.service';
@@ -28,6 +29,8 @@ export class ShopComponent implements OnInit {
   getProducts() {
     this.shopService.getProducts(this.brandIdSelected, this.typeIdSelected).subscribe({
       next: response => {
+        // console.log('getproducts type: ', typeof response);
+
         this.products = response.data;
         console.log(this.products);
 
@@ -41,6 +44,8 @@ export class ShopComponent implements OnInit {
   getBrands() {
     this.shopService.getBrands().subscribe({
       next: response => {
+        // console.log('getbrands type: ', typeof response);
+
         this.brands = [{ id: 0, name: 'All' }, ...response];
       },
       error: err => {
@@ -61,13 +66,13 @@ export class ShopComponent implements OnInit {
   }
 
   onBrandSelected(brandId: number) {
-    this.brandIdSelected = brandId
-    this.getProducts();
+    this.brandIdSelected = brandId;
     this.getProducts();
   }
 
   onTypeSelected(typeId: number) {
-    this.typeIdSelected = typeId
+    this.typeIdSelected = typeId;
+    this.getProducts();
 
   }
 

@@ -18,11 +18,15 @@ export class ShopService {
     let params = new HttpParams();
 
     if (brandId) {
+      console.log("typeof brandId: ", typeof brandId);
+
       params = params.append('brandId', brandId.toString());
     }
     if (typeId) {
       params = params.append('typeId', typeId.toString());
     }
+
+    // return this.http.get<IPagination>(this.baseUrl + 'products', { params: params });
 
     return this.http.get<IPagination>(this.baseUrl + 'products', { observe: 'response', params: params }).pipe(
       map(response => {
