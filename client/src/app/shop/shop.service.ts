@@ -22,11 +22,10 @@ export class ShopService {
 
       params = params.append('brandId', brandId.toString());
     }
+
     if (typeId) {
       params = params.append('typeId', typeId.toString());
     }
-
-    // return this.http.get<IPagination>(this.baseUrl + 'products', { params: params });
 
     return this.http.get<IPagination>(this.baseUrl + 'products', { observe: 'response', params: params }).pipe(
       map(response => {
