@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PagingHeaderComponent } from './components/paging-header/paging-header.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PagingHeaderComponent
+  ],
   imports: [
     CommonModule,
     PaginationModule.forRoot(),
@@ -14,7 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   exports: [
     PaginationModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    PagingHeaderComponent
   ]
 })
 export class SharedModule { }
