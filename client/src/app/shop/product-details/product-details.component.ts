@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { IProduct } from '../../shared/models/product';
 import { ShopService } from '../shop.service';
 
@@ -12,6 +13,8 @@ export class ProductDetailsComponent implements OnInit {
   product: IProduct;
 
   constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute) { }
+  faPlusCircle = faPlusCircle
+  faMinusCircle = faMinusCircle
 
   ngOnInit(): void {
     this.loadProduct();
