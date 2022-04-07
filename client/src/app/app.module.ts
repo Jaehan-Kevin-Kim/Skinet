@@ -24,7 +24,6 @@ import { HomeModule } from './home/home.module';
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    ShopModule,
     SharedModule,
     HomeModule
   ],
