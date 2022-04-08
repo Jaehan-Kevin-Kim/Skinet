@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
+import { BreadcrumbService } from 'xng-breadcrumb';
 import { IProduct } from '../../shared/models/product';
 import { ShopService } from '../shop.service';
 
@@ -12,7 +13,7 @@ import { ShopService } from '../shop.service';
 export class ProductDetailsComponent implements OnInit {
   product: IProduct;
 
-  constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute) { }
+  constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute, private bcService: BreadcrumbService) { }
   faPlusCircle = faPlusCircle
   faMinusCircle = faMinusCircle
 
@@ -26,6 +27,7 @@ export class ProductDetailsComponent implements OnInit {
       {
         next: (product: IProduct) => {
           this.product = product;
+          this.bcService.set('@productDetails', product.name)
         },
         error: error => console.log(error)
       }
