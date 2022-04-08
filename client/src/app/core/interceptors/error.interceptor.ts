@@ -5,7 +5,7 @@ import {
   HttpEvent,
   HttpInterceptor
 } from '@angular/common/http';
-import { catchError, map, Observable, throwError } from 'rxjs';
+import { catchError, delay, map, Observable, throwError } from 'rxjs';
 import { NavigationExtras, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
@@ -16,7 +16,6 @@ export class ErrorInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     return next.handle(request).pipe(
-
       catchError(error => {
         console.log('error in interceptor: ', error);
 
