@@ -39,6 +39,8 @@ export class ErrorInterceptor implements HttpInterceptor {
             const navigationExtras: NavigationExtras = {
               state: { error: error.error }
             };
+            // console.log('navigationExtras: ', navigationExtras);
+
             this.router.navigateByUrl('/server-error', navigationExtras);
           }
         }
