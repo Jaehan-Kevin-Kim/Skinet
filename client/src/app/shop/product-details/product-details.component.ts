@@ -13,7 +13,10 @@ import { ShopService } from '../shop.service';
 export class ProductDetailsComponent implements OnInit {
   product: IProduct;
 
-  constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute, private bcService: BreadcrumbService) { }
+  constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute, private bcService: BreadcrumbService) {
+    this.bcService.set('@productDetails', ' ');
+
+  }
   faPlusCircle = faPlusCircle
   faMinusCircle = faMinusCircle
 
