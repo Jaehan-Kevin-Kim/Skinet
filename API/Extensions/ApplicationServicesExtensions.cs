@@ -14,6 +14,8 @@ namespace API.Extensions
             // 아래 services.Add뒤에 나오는 내용들은 보통 살아있는 기간과 관련이 있을 수 있음.
             services.AddScoped<IProductRepository, ProductRepository>();
 
+            services.AddScoped<IBasketRepository, BasketRepository>();
+
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
 
             services.Configure<ApiBehaviorOptions>(options =>
