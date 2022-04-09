@@ -4,6 +4,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PagingHeaderComponent } from './components/paging-header/paging-header.component';
 import { PagerComponent } from './components/pager/pager.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 
@@ -15,13 +16,15 @@ import { PagerComponent } from './components/pager/pager.component';
   imports: [
     CommonModule,
     PaginationModule.forRoot(),
-    FontAwesomeModule
+    FontAwesomeModule,
+    CarouselModule
   ],
   exports: [
     PaginationModule,
     FontAwesomeModule,
     PagingHeaderComponent,
-    PagerComponent
+    PagerComponent,
+    CarouselModule
   ]
 })
 export class SharedModule { }
