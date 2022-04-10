@@ -15,11 +15,11 @@ export interface IBasketItem {
     type: string;
 }
 
-export class Basket implements IBasket {
 
+export class Basket implements IBasket {
     // id: 'guid';
-    id: uuidv4;
-    items: IBasketItem[];
+    id = uuidv4();
+    items: IBasketItem[] = [];
 
 }
 
