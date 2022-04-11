@@ -20,8 +20,11 @@ export class BasketService {
   getBasket(id: string) {
     return this.http.get(this.baseUrl + 'basket?id=' + id)
       .pipe(
-        map((basket: IBasket) =>
+        map((basket: IBasket) => {
           this.basketSource.next(basket)
+          console.log('currentBasketValue: ', this.getCurrentBasketValue());
+        }
+
         ))
   }
 
