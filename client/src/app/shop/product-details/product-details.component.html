@@ -9,15 +9,16 @@
             <div class="d-flex justify-content-start align-items-center">
 
                 <fa-icon class="icon text-warning mr-2" size="lg" [icon]="faMinusCircle"
-                    style="cursor: pointer; font-size: 2em; color: yellowgreen;">
+                    style="cursor: pointer; font-size: 2em; color: yellowgreen;" (click)="decrementQuantity()">
                 </fa-icon>
                 <span class=" mx-2" style="font-size: 1.5em;"><strong>
-                        2
+                        {{quantity}}
                     </strong> </span>
 
                 <fa-icon class="icon" size="lg" [icon]="faPlusCircle"
-                    style="cursor: pointer; font-size: 2em; color: yellowgreen;"></fa-icon>
-                <button class="btn btn-outline-secondary btn-lg mx-4">Add to Cart</button>
+                    style="cursor: pointer; font-size: 2em; color: yellowgreen;" (click)="incrementQuantity()">
+                </fa-icon>
+                <button class="btn btn-outline-primary btn-lg mx-4" (click)="addItemToBasket()">Add to Cart</button>
             </div>
         </div>
         <div class="row mt-5">
