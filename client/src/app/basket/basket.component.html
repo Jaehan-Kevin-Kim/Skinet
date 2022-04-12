@@ -65,14 +65,16 @@
                                         <td class="align-middle">
                                             <div class="d-flex align-items-center">
                                                 <fa-icon class="icon text-warning mr-2" [icon]="faMinusCircle"
-                                                    style="cursor: pointer; font-size: 2em; color: yellowgreen;">
+                                                    style="cursor: pointer; font-size: 2em; color: yellowgreen;"
+                                                    (click)="decrementItemQuantity(item)">
                                                 </fa-icon>
                                                 <span class=" mx-2" style="font-size: 1em;"><strong>
                                                         {{item.quantity}}
                                                     </strong> </span>
 
                                                 <fa-icon class="icon" [icon]="faPlusCircle"
-                                                    style="cursor: pointer; font-size: 2em; color: yellowgreen;">
+                                                    style="cursor: pointer; font-size: 2em; color: yellowgreen;"
+                                                    (click)="incrementItemQuantity(item)">
                                                 </fa-icon>
                                             </div>
                                         </td>
@@ -82,7 +84,8 @@
 
                                         <td class="align-middle text-center">
                                             <a class="text-danger" style="cursor: pointer;">
-                                                <fa-icon class="icon" size="lg" [icon]="faTrash"></fa-icon>
+                                                <fa-icon class="icon" size="lg" [icon]="faTrash"
+                                                    (click)="removeBasketItem(item)"></fa-icon>
                                             </a>
                                         </td>
                                     </tr>

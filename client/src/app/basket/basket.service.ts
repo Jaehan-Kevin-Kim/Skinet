@@ -66,8 +66,6 @@ export class BasketService {
     } else {
       this.removeItemFromBasket(item)
     }
-
-
   }
 
   removeItemFromBasket(item: IBasketItem) {
