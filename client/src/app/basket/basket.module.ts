@@ -13,6 +13,7 @@ import { BasketComponent } from './basket.component';
   imports: [
     CommonModule,
     BasketRoutingModule,
-    SharedModule]
+    SharedModule
+  ]
 })
 export class BasketModule { }
