@@ -49,20 +49,53 @@ export class BasketService {
     return this.basketSource.value;
   }
 
-
-  private calculateTotals() {
+  incrementItemQuantity(item: IBasketItem) {
     const basket = this.getCurrentBasketValue();
-    const shipping = 0;
-    const subtotal = basket.items.reduce((pre, cur) => (cur.price * cur.quantity) + pre, 0); // 0는 initial value임. (처음 prev의 값)
-    const total = shipping + subtotal;
+    const foundItemIndex = basket.items.findIndex(x => x.id === item.id);
+    basket.items[foundItemIndex].quantity++;
+    this.setBasket(basket);
+  }
 
-    this.basketTotalSource.next({ shipping, subtotal, total });
+  decrementItemQuantity(item: IBasketItem) {
+    const basket = this.getCurrentBasketValue();
+    const foundItemIndex = basket.items.findIndex(x => x.id === item.id);
 
-    console.log('total: ', total);
+    if (basket.items[foundItemIndex].quantity > 1) {
+      basket.items[foundItemIndex].quantity--;
+      this.setBasket(basket);
+    } else {
+      this.removeItemFromBasket(item)
+    }
 
-    console.log("this.basketTotalSource: ", this.basketTotalSource);
 
   }
+
+  removeItemFromBasket(item: IBasketItem) {
+    const basket = this.getCurrentBasketValue();
+    if (basket.items.some(x => x.id === item.id)) {
+      basket.items = basket.items.filter(i => i.id !== item.id);
+      if (basket.items.length > 0) {
+        this.setBasket(basket);
+      } else {
+        this.deleteBasket(basket);
+      }
+    }
+  }
+
+  deleteBasket(basket: IBasket) {
+    return this.http.delete(this.baseUrl + 'basket?id=' + basket.id).subscribe({
+      next: () => {
+        this.basketSource.next(null);
+        this.basketTotalSource.next(null);
+        localStorage.removeItem('basket_id');
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    })
+  }
+
+
 
   addItemToBasket(item: IProduct, quantity = 1) {
     const itemToAdd: IBasketItem = this.mapProductItemToBasketItem(item, quantity);
@@ -110,6 +143,18 @@ export class BasketService {
     }
   }
 
+  private calculateTotals() {
+    const basket = this.getCurrentBasketValue();
+    const shipping = 0;
+    const subtotal = basket.items.reduce((pre, cur) => (cur.price * cur.quantity) + pre, 0); // 0는 initial value임. (처음 prev의 값)
+    const total = shipping + subtotal;
 
+    this.basketTotalSource.next({ shipping, subtotal, total });
+
+    console.log('total: ', total);
+
+    console.log("this.basketTotalSource: ", this.basketTotalSource);
+
+  }
 
 }
