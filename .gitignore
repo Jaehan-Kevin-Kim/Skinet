@@ -4,5 +4,6 @@ appsetings.json
 *.db
 skinet.db-shm
 skinet.db-wal
+*.rdb
 
 
