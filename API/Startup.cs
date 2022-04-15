@@ -3,6 +3,7 @@ using API.Helpers;
 using API.Middleware;
 using AutoMapper;
 using Infrastructure.Data;
+using Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -35,8 +36,13 @@ namespace API
             {
                 // options.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
-                // options.UseSqlite(ConfigurationÍ.GetConnectionString("DefaultConnection"));
+                // options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
 
+            });
+
+            services.AddDbContext<AppIdentityDbContext>(options =>
+            {
+                options.UseSqlite(_config.GetConnectionString("IdentityConnection"));
             });
 
             services.AddSingleton<IConnectionMultiplexer>(c =>

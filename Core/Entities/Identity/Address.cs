@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Core.Entities.Identity
 {
-    public class Addess
+    public class Address
     {
 
         public int Id { get; set; }
