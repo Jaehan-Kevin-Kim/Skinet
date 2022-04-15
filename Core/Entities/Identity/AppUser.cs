@@ -11,3 +11,4 @@ namespace Core.Entities.Identity
 
     }
 }
+
