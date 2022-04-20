@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using API.Dtos;
 using API.Errors;
 using API.Extensions;
+using AutoMapper;
 using Core.Entities.Identity;
 using Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -17,9 +18,12 @@ namespace API.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly ITokenService _tokenService;
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenService tokenService)
+        private readonly IMapper _mapper;
+
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenService tokenService, IMapper mapper)
         {
             _tokenService = tokenService;
+            _mapper = mapper;
             _signInManager = signInManager;
             _userManager = userManager;
         }
@@ -55,7 +59,7 @@ namespace API.Controllers
         // 아래는 UserAddress를 찾는 API.
         [Authorize]
         [HttpGet("address")]
-        public async Task<ActionResult<Address>> GetUserAddress()
+        public async Task<ActionResult<AddressDto>> GetUserAddress()
         {
             // var email = User.FindFirstValue(ClaimTypes.Email);
 
@@ -64,12 +68,27 @@ namespace API.Controllers
             var user = await _userManager.FindUserByClamisPrincipalWithAddressAsync(User);
             // Console.WriteLine(user);
 
+            // return user.Address;
+            return _mapper.Map<Address, AddressDto>(user.Address);
+        }
 
+        [Authorize]
+        [HttpPut("address")]
+        public async Task<ActionResult<AddressDto>> UpdateUserAddress(AddressDto addressDto)
+        {
+            var user = await _userManager.FindUserByClamisPrincipalWithAddressAsync(User);
 
-            return user.Address;
+            // 아래는 automapper를 이용해서 자동으로 properties를 업데이트 하는 코드 (addressDto에서 address로 자동 변경 하기)
+            user.Address = _mapper.Map<AddressDto, Address>(addressDto);
 
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded) return Ok(_mapper.Map<Address, AddressDto>(user.Address));
+
+            return BadRequest("Problem updating the user");
 
         }
+
 
 
 

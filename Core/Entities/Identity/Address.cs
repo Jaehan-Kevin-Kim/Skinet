@@ -14,6 +14,8 @@ namespace Core.Entities.Identity
         public string State { get; set; }
         public string ZipCode { get; set; }
 
+
+// 아래는 Navigation
         [Required]
         public string AppUserId { get; set; }
         public AppUser AppUser { get; set; }

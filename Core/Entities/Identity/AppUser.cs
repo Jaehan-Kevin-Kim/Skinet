@@ -8,7 +8,6 @@ namespace Core.Entities.Identity
 
         public Address Address { get; set; }
 
-
     }
 }
 
