@@ -21,6 +21,5 @@ namespace API.Dtos
 
         [Required]
         public string ZipCode { get; set; }
-
     }
 }
