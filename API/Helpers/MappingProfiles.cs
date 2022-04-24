@@ -17,6 +17,8 @@ namespace API.Helpers
 
             // 아래 Address와 AddressDto의 경우 Property Name이 다 똑같기 때문에 위와 같이 additional 설정을 해 줄 필요가 없음
             CreateMap<Address, AddressDto>().ReverseMap();
+            CreateMap<CustomerBasketDto, CustomerBasket>();
+            CreateMap<BasketItemDto, BasketItem>();
         }
     }
 }
